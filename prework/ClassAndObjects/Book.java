@@ -7,9 +7,9 @@ class Book {
     
     //constructor
     public Book(String title, String author, int length){
-        this.setTitle(title);
-        this.setAuthor(author);
-        this.setLength(length);
+        setTitle(title);
+        setAuthor(author);
+        setLength(length);
     };
     //setters
     public void setTitle(String title){
@@ -37,7 +37,7 @@ class Book {
     public int getLength(){
         return this.length;
     }
-
+    // Method that return a prinln
     public void BookDescription(){
         System.out.println("The book " + this.title + " write by " + this.author + " has " + this.length + " pages.");
     };
