@@ -1,31 +1,37 @@
 package GetterSetters;
-
+//import java util Date to access
 import java.util.Date;
 
 class Friend {
     private String name;
-    private Date birthday;
     private int age;
+    private Date birthday;
     private boolean working;
 
     // constructor
-    public Friend(String nombre, Date cumple, int edad, boolean trabaja){
+    public Friend(String nombre, int edad){
         setName(nombre);
-        setBirthday(cumple);
         setAge(edad);
+        this.birthday = new Date();
         this.working = true;
+    }
+    public Friend(String nombre, int edad, boolean work){
+        setName(nombre);
+        setAge(edad);
+        this.birthday = new Date();
+        setWorking(work);
     }
     //setters
     public void setName(String nombre) {
         this.name = nombre;
     }
-    public void setBirthday(Date cumple) {
-        this.birthday = cumple;
-    }
+    // public void setBirthday(Date cumple) {
+    //     this.birthday = cumple;
+    // }
     public void setAge(int edad) {
         this.age = edad;
     }
-    public void working(boolean trabaja) {
+    public void setWorking(boolean trabaja) {
         this.working = trabaja;
     }
     //getters
@@ -38,7 +44,8 @@ class Friend {
     public int getAge(){
         return this.age;
     }
-    public boolean getWorking(){
+    // we use has or is in boolean getters
+    public boolean hasWorking(){
         return this.working;
     }
 
