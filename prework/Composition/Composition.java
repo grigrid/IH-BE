@@ -2,6 +2,11 @@ package Composition;
 
 public class Composition {
     public static void main(String[] args) {
-        // Desktop desktop1 = new Desktop("modelName", 123, 123, 123);
+        Desktop desktop1 = new Desktop("Escritorio Chachi", new Monitor(123, "Bq"), new Keyboard(123), new Tower(123));
+    
+        System.out.println(desktop1.getTower().getModelNum());
+    
+    
+
     }
 }
