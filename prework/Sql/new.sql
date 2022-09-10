@@ -24,6 +24,12 @@ VALUES (32165, "Centipede", 99632342, 5.99, 3.7, "Games");
  
 INSERT INTO rating (id, app_name, app_size, price, total_ratings, genre)
 VALUES (6549873, "Dracula", 10243, 1.99, 4.9, "Books");
+
+INSERT INTO rating (id, app_name, app_size, price, total_ratings, genre)
+VALUES (12354234, "Batman", 1231, 22.99, 1.9, "Books");
+
+-- Delete a row
+DELETE FROM rating WHERE id=281656475;
      
 -- Now that you have data in your table, we can use a SELECT statement to run a query.
 SELECT * FROM rating;
@@ -46,9 +52,3 @@ WHERE genre = "Games" AND total_ratings > 4;
 
 -- https://mode.com/sql-tutorial/sql-group-by/
 
--- Tasks to do
--- Find the sum of all of the prices of all of the applications within the rating table.
-SELECT SUM (price) FROM rating;
--- Find the maximum value of total_ratings of all of the applications within the rating table.
-
--- Find the average prices grouped by genre within the rating table.
