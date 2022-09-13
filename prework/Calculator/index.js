@@ -1,10 +1,8 @@
 
 
 const pressBtn = (btn) => {
-
     display = document.querySelector('#actualValue').innerHTML += btn;
     console.log(btn);
-
 }
 
 //  Try to use this method to the up 
