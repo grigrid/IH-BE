@@ -1,18 +1,20 @@
 
 
-
-
 const pressBtn = (btn) => {
-    if (btn !== "c") {
-        display = document.querySelector('#actualValue').innerHTML += btn;
-        console.log(btn);
-    }
+
+    display = document.querySelector('#actualValue').innerHTML += btn;
+    console.log(btn);
+
 }
 
-document.querySelector('#clean').addEventListener('click', function () {
-    screen.value = '';
+//  Try to use this method to the up 
+let btnClean = document.querySelector('#clean');
+btnClean.addEventListener('click', function () {
+    display = document.querySelector("#actualValue").innerHTML = "";
+
 })
 
+// Not working 
 const pressClean = () => {
     display = document.querySelector("#actualValue").innerHTML = "";
 }
