@@ -19,7 +19,7 @@ public class Main {
         String product = "    Tapacubos para   coche ";
         String date = "12/08/2022";
         System.out.println(productForMatter(product, date));
-
+       
     }
 
     private static String productForMatter(String productName, String date){
