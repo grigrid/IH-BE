@@ -22,11 +22,7 @@ public class Main {
 
     public static BigDecimal reverseSign ( BigDecimal num){
         double bigToDbNum = num.floatValue();
-        if ( bigToDbNum < 0) {
-            return BigDecimal.valueOf(bigToDbNum).abs().setScale(1, RoundingMode.HALF_EVEN);
-        } else {
-            return  num.setScale(1, RoundingMode.HALF_EVEN);
-        }
-
+        if ( bigToDbNum < 0) return BigDecimal.valueOf(bigToDbNum).abs().setScale(1, RoundingMode.HALF_EVEN);
+        else return  num.setScale(1, RoundingMode.HALF_EVEN);
     }
 }
