@@ -26,7 +26,13 @@ See the STOUT
 
 > System.out.println(name);
 
-## Crear Archivos
+## Crear un archivo
+
+Para crear puede sser así o directamente con el FileWriter.
+
+> File file1 = new File("ruta.txt")
+
+## Escribir en los archivos
 
 Puede funcionar con un solo parametro o con el parametro append(boolen) que significa añadir;
 
@@ -47,3 +53,32 @@ Lo qeu va entre parentesis es la ruta del archivo
 
 > File file = new File("demo.txt)
 > Scanner filerreader = new Scanner(file);
+
+## Interfaces
+
+En las interfaces solo escribiremos la huella de los metodos
+ejemplo:
+
+```
+void play();
+void subirVolumen(int volumen);
+void bajarVolumen(int volumen);
+void pause();
+```
+
+Collection
+
+-   Set
+-
+
+## Abastrac Class
+
+puede contener variables, constructor, getters, setter y metodos.
+Los metodos pueden ser similares a lo de la intereface que solo contienen metodos
+pero el metodo tiene que ser absract y se puede hacer toda la lógica en los hijos.
+
+> abstract void nombreMetodo(Parametro param);
+
+El metodo hijo debería extends del padre y este ya puede llamar al metodo del padre para implementar la lógica.
+
+En el main no se podra llamar nunca a la clase abstracta solo a las clases hijas que vienen, heredan o implementan de ella.
