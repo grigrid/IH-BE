@@ -8,7 +8,7 @@ public class Invoice {
     private String id;
     private double total;
     private boolean isPaid;
-    private List<InvoiceItems> items;
+    private List<com.day26sept.InvoiceItems> items;
 
     public Invoice(String id, double total, boolean isPaid, List<InvoiceItems> items) {
         setId(id);
