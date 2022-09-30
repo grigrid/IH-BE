@@ -6,6 +6,10 @@ para crear el archivo .gitignore
 
 > touch .gitignore
 
+To disconect git from local
+
+> rm -rf .git
+
 The touch command is mainly used for creating an empty file or to modify/change the timestamp of a file.
 
 ## STIN - STOUT
